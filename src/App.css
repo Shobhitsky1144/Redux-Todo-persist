@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 133px;
+  padding: 6px 8px;
+  border-bottom: 7px solid rgb(0, 148, 222);
+}
+.nav-item-left {
+  width: 20%;
+  border: 3px solid rgb(0, 148, 222);
+  border-radius: 12px;
+
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 23px;
+}
+.nav-item-center {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.nav-item-center .logo {
+  width: 80%;
+  height: 115px;
+}
+.nav-item-right {
+  width: 10%;
+  min-width: 125px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item-right .social-image .GooglePlay {
+  width: 133px;
+  height: 47px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-item-right .social-image .AppleStore {
+  width: 133px;
+  height: 42px;
+}
+.nav-item-right .social-icon {
+  display: flex;
+  justify-content: space-around;
+}
+.second-header {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  background-color: lawngreen;
+}
+.second-header-left {
+  width: 20%;
+  min-width: 161px;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightcoral;
+}
+.second-header-center {
+  width: 70%;
+  background-color: aqua;
+}
+.second-header-right {
+  width: 10%;
+  min-width: 190px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(111, 0, 255);
+}
+
+/* <------media query ----------> */
+@media (max-width: 620px) {
+  .nav-item-left {
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-item-center .logo {
+    width: 100%;
+    height: 115px;
   }
 }
